@@ -83,6 +83,14 @@ npm run build
 npm run preview
 ```
 
+## Netlify deployment
+
+The repository includes `netlify.toml` so Netlify builds the Vite app from
+`frontend/` and publishes the generated `frontend/dist/` directory. If the
+site has a manually configured publish directory, set the base directory to
+`frontend`, the build command to `npm run build`, and the publish directory to
+`dist`.
+
 ## API Routes
 
 - `POST /api/auth/register` - Register a user
